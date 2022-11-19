@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
+
   margin: 0;
-  padding: 0;
+
 }
 
 header {
@@ -44,7 +44,7 @@ header {
   padding: 9px 25px;
   background-color: rgb(255 255 255);
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease 0s;
 }
@@ -80,8 +80,8 @@ header {
 }
 
 .overlay a {
-  padding: 15px;
-  font-size: 36px;
+  padding: 20px;
+  font-size: 30px;
   display: block;
   transition: color 0.3s ease 0s;
 }
@@ -93,7 +93,7 @@ header {
 .overlay .close {
   position: absolute;
   top: 20px;
-  right: 45px;
+  right: 20px;
   font-size: 60px;
   color: #edf0f1;
 }
@@ -108,6 +108,8 @@ header {
     right: 35px;
   }
 }
+
+/* Header */
 
 @media only screen and (max-width: 800px) {
   .nav__links,

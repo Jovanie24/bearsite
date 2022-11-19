@@ -1,225 +1,71 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bearsite</title>
-    <meta name="description" content="">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/form.css">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0' />
-    <link rel="icon" href="assets/img/web-icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    </head>
-<body>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bearsite</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/form.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0' />
+  <link rel="icon" href="assets/img/web-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <style>
-    body {
-    font-family: 'Montserrat';font-size: 15px;
-        }
-    </style>
-
-    <header>
-        <a class="logo" href="index.html"><img src="assets/img/icons.jpg" alt="logo" style="height: 55px"></a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li>
-                    <a href="#"><i class="fa fa-facebook"></a> </i> 
-                    <a href="#"><i class="fa fa-twitter"></a> </i>
-                    <a href="#"><i class="fa fa-youtube-play"></a> </i>
-                </li>
-            </ul>
-        </nav>
-        <p class="menu cta">Menu</p>
-    </header>
-    <div class="overlay"> <a class="close">&times;</a>
-        <div class="overlay__content">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-            <a href="#">SERVICES</a>
-            <a href="#"><i class="fa fa-facebook"></a></i>
-            <a href="#"><i class="fa fa-twitter"></a></i>
-            <a href="#"><i class="fa fa-youtube-play"></a></i>
-        </div>
-    </div> 
-
-  <style>
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    /* CSS for header */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #000000;
-    }
-
-    .header .logo {
-      font-size: 25px;
-      font-family: 'Montserrat';
-      color: #000000;
-      text-decoration: none;
-      padding-left: 80px;
-    }
-
-    .nav-items {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding-right: 100px;
-    }
-
-    .nav-items a {
-      text-decoration: none;
-      color: #ffffff;
-      margin-right: 5px;
-    }
-
-    /* CSS for main element */
-    .intro {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 580px;
-      background: url("assets/img/background.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-    }
-
-    .intro p {
-      font-size: 30px;
-      color: #000000;
-      margin: 0;
-    }
-
-    .intro button {
-      background-color: #000000;
-      color: #ffffff;
-      padding: 10px;
-      border: none;
-      border-radius: 0px;
-      font-family: 'Montserrat';
-      font-size: 12px;
-      width: 150px;
-      align-items: center;
-      cursor: pointer;
-      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
-    }
-
-    .achievements {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 50px 50px;
-    }
-
-    .achievements .slicing {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    } 
-
-    .achievements .slicing .slicing-heading {
-      font-size: 30px;
-      color: #333333;
-      margin: 10px 0;
-    } 
-
-    div.b {  
-    word-wrap: break-word;  
-    }
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  background-color: #000000;
-  color: white;
-  width: 50%;
-  padding: 50px;
-  height: 350px; /* Should be removed. Only for demonstration */
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-    height: 550px;
-  }
-}
-
-    /* CSS for footer */
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #000000;
-      padding: 2px 50px;
-      padding-bottom: 20px;
-    }
-
-    .footer .copy {
-      color: #fff;
-    }
-
-  </style>
-</head>
-
-<body>
-  <main>
-  <div class="card-body">
-    <div class="intro" style="padding: 40px;">
-      <center><p>Lorem ipsum dolor sit amet, consectetur</p>
-      <a><class style="font-size: 12px; font-family: serif;"> Vestibulum porttitor rhoncus dolor purus. Fusce id velit ut tortor pretium viverra suspendisse.</a></center>
-        <br><br>
-      <button>CONTACT</button>
-    </div>
-    <div class="achievements">
-      <div class="slicing">
-        <center><p class="slicing-heading">This is a slicing test.</p>
-        <p class="b slicing-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Euismod lacinia at quis risus sed. Urna porttitor rhoncus dolor purus. Fusce id velit ut tortor pretium viverra suspendisse.</p>
-        <br>
-        <p class="b slicing-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Euismod lacinia at quis risus sed. Urna porttitor rhoncus dolor purus. Fusce id velit ut tortor pretium viverra suspendisse.</p>
-        </center>
-      </div>
+  <header>
+    <a class="logo" href="index.html"> <img src="assets/img/icons.jpg" alt="logo" style="height: 55px"></a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li> <a href="#"><i class="fa fa-facebook"></a> </i> <a href="#"><i class="fa fa-twitter"></a> </i> <a href="#"><i class="fa fa-youtube-play"></a> </i>
+        </li>
+      </ul>
+    </nav>
+    <p class="menu cta">Menu</p>
+  </header>
+  <div class="overlay"> <a class="close">&times;</a>
+    <div class="overlay__content"> <a href="#">HOME</a> <a href="#">ABOUT</a> <a href="#">CONTACT</a> <a href="#">SERVICES</a> <a href="#"><i class="fa fa-facebook"></a></i> <a href="#"><i class="fa fa-twitter"></a></i> <a href="#"><i class="fa fa-youtube-play"></a></i>
     </div>
   </div>
-</main>
+  </head>
 
-<main>
-<div class="info-con-box">
-  <div class="column" class="info-con-box">
-    <p style="font-size: 30px">This is a column 2 layout.</p><br>
-    <p><font style="font-size: 13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor. Aenean vel elit scelerisque mauris pellentesque. At tempor commodo ullamcorper a lacus vestibulum sed arcu. In massa tempor nec feugiat nisl pretium fusce id velit.</p>
+  <body>
+  <main>
+    <div class="card-body">
+      <div class="intro" style="padding: 40px;">
+        <center>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+          <a>
+            <class style="font-size: 12px; font-family: serif;"> Vestibulum porttitor rhoncus dolor purus. Fusce id velit ut tortor pretium viverra suspendisse.</a>
+        </center>
+        <br>
+        <br>
+        <button>CONTACT</button>
+      </div>
+      <div class="container">
+        <div class="slicing">
+          <center>
+            <p class="slicing-heading">This is a slicing test.</p>
+            <p class="b slicing-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Euismod lacinia at quis risus sed. Urna porttitor rhoncus dolor purus. Fusce id velit ut tortor pretium viverra suspendisse.</p>
+            <br>
+            <p class="b slicing-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Euismod lacinia at quis risus sed. Urna porttitor rhoncus dolor purus. Fusce id velit ut tortor pretium viverra suspendisse.</p>
+            <br>
+            <p class="b slicing-text" style="font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Euismod lacinia at quis risus sed. Urna porttitor rhoncus dolor purus. Fusce id velit ut tortor pretium viverra suspendisse.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+  </main>
+  <main>
+    <div class="info-con-box">
+      <div class="column" class="info-con-box">
+        <p style="font-size: 30px">This is a column 2 layout.</p>
+        <br>
+        <p><font style="font-size: 13px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor. Aenean vel elit scelerisque mauris pellentesque. At tempor commodo ullamcorper a lacus vestibulum sed arcu. In massa tempor nec feugiat nisl pretium fusce id velit.</p>
         <br>
     <p>Tincidunt dui ut ornare lectus sit amet. Faucibus nisl tincidunt eget nullam non. Phasellus vestibulum lorem sed risus ultricies. Donec massa sapien faucibus et molestie ac feugiat sed. Sed arcu non odio euismod lacinia. Quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper.</p><br>
   </div>
@@ -232,16 +78,12 @@
 </div>
   </main>
 
-<body>
-    <div class="achievements">
+    <div class="container">
         <div id="contact">
             <div class="info con-box">
                 
-                    <p style="font-size: 29px">This is wrapped.</p>
+                    <p style="font-size: 29px">This is wrapped.</p><br>
                     
-                    <ul style="font-size: 11px">
-                        <li>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor. Aenean vel elit scelerisque mauris pellentesque. At tempor commodo ullamcorper a lacus vestibulum sed arcu. In massa tempor nec feugiat nisl pretium fusce id velit.</p><br>
 
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor. Aenean vel elit scelerisque mauris pellentesque. At tempor commodo ullamcorper a lacus vestibulum sed arcu. In massa tempor nec feugiat nisl pretium fusce id velit.</p><br>
 
@@ -249,23 +91,20 @@
 
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor. Aenean vel elit scelerisque mauris pellentesque. At tempor commodo ullamcorper a lacus vestibulum sed arcu. In massa tempor nec feugiat nisl pretium fusce id velit.</p><br>
 
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </li>
-                    </ul>
-                
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor. Aenean vel elit scelerisque mauris pellentesque. At tempor commodo ullamcorper a lacus vestibulum sed arcu. In massa tempor nec feugiat nisl pretium fusce id velit.</p><br>          
             </div>
 
                         <div class="info con-box" style="float: right;">
                 <div class="con">
-                <div class="body" style="padding: 10px; color: white; background: #000000">
+                <div class="body" style="color: white; background: #000000">
                   
                     <center><br>
                       <i><p style="font-size: 30px; color: #ffffff; font-family: serif;">Get in touch.</p></i></center>
                     <form style="padding: 30px;" class="form">
-                        <p>Your name</p>&nbsp
+                        <p>Your name</p>&nbsp;
                         <input style="font-family: Montserrat; width: 100%;"></input><br>
                         
-                        <p>Your email</p>&nbsp
+                        <p>Your email</p>&nbsp;
                         <input type="email" style="font-family: Montserrat; width: 100%;"></input><br>
 
                         <p>Your Phone</p><br>
@@ -276,7 +115,7 @@
                         <br>
 
 
-                        <button style="background-color: orange; color: #ffffff; padding: 10px; border: none; border-radius: 0px; font-family: 'Montserrat'; font-size: 12px; width: 95px;">SUBMIT</button>
+                        <button style="background-color: orange; color: #ffffff; padding: 10px; border: none; border-radius: 5px; font-family: 'Montserrat'; font-size: 12px; width: 90px;">SUBMIT</button>
                   
               </form>
               </div>
@@ -286,29 +125,133 @@
     </div>
 </body>
 
-</html>
+  <style>
+  body {
+    font-family: 'Montserrat';
+  }
+  </style>
 
-  <footer class="footer">
-    <div style="padding-top: 20px;" class="logo"><img src="assets/img/carlocab.png" style="height: 40px; padding-right: 100px">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-    <p style="color: gray; font-size: 9px; font-family: sans-serif">&copy; Copyright © 2022 Carl Ocab Digital Marketing Inc. Sitemap XML · <a class href="index.html">Privacy Policy</a> · <a class href="index.html">Contact Us</a></p>
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 580px;
+    background: url("assets/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .intro p {
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+  }
+  
+  .intro button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    width: 150px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 30px;
+  }
+  
+  .container .slicing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .slicing .slicing-heading {
+    font-size: 30px;
+    color: #333333;
+    margin: 10px 0;
+  }
+  /* Create two equal columns that floats next to each other */
+  
+  .column {
+    float: left;
+    background-color: #000000;
+    color: white;
+    width: 50%;
+    padding: 50px 30px;
+    height: 320px;
+  }
+  /* Clear floats after the columns */
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Columns */
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      height: 450px;
+    }
+  }
+
+  /* Logo */
+
+  @media all and (max-width:480px) {
+
+    img {display:block;margin:0 auto;}
+}
+
+  /* CSS for footer */
+  
+  .footer-dark {
+    padding: 30px;
+    background-color: #000000;
+  }
+  </style>
+
+<footer>
+  <div class="footer-dark">
+    <div class="row">
+    <div class="col-sm-12">
+      <img style="height: 40px;" src="assets/img/carlocab.png">
+
+        <p style="color: gray; font-size: 9px; font-family: sans-serif; padding-top: 5px; width: 100%; text-align-last: left;">&copy; Copyright © 2022 Carl Ocab Digital Marketing Inc. Sitemap XML · Privacy Policy · Contact Us</p><br>
+        
+
+        <p style="color: gray; float: right; text-align: center; font-size: 9px; font-family: sans-serif;">Main Branch: 9th Floor, Filinvest One Building, Northgate Cyberzone, Filinvest Alabang, Muntinlupa 1781, Metro Manila, Philippines
+          <br>BF Branch: 196 J Elizalde St., BF International, BF Homes, Parañaque, 1720 Metro Manila, Philippines Philippines: +63 (917) 503-4874</p><br>
+
     </div>
-
-    <div><p style="color: gray; float: right; text-align: right; font-size: 9px; font-family: sans-serif; padding-top: 15px;">
-      Main Branch: 9th Floor, Filinvest One Building, Northgate Cyberzone, Filinvest Alabang, Muntinlupa 1781, Metro Manila, Philippines<br>BF Branch: 196 J Elizalde St., BF International, BF Homes, Parañaque, 1720 Metro Manila, Philippines Philippines: +63 (917) 503-4874</p>
-    </div>
-  </footer>
-</body>
-</html>
-
-
-
-
-
-
-
+  </div>
+</div>
+</footer>
+  
 
     <script type="text/javascript" src="assets/js/mobile.js"></script>
-</body>
 
 </html>
