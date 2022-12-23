@@ -10,15 +10,9 @@
 }
 
 .info{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 30px;
     height: 100%;
     width: 50%;
-    /* width: 25%; */
-    /* margin: 5%; */
-    /* padding: 2rem 2rem 0 2rem; */
     background: #e3f0ed;
 }
 .con-form{
