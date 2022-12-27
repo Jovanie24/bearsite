@@ -144,7 +144,7 @@
         <div class="contact">
           <div class="form" style="color: white; background: #000000; padding: 20px;">
             <br>
-            <form style="padding-left: 30px; padding-right: 30px; padding-bottom: 30px" id="form">
+            <form style="padding-left: 30px; padding-right: 30px; padding-bottom: 30px" id="form" onsubmit="myFunction()">
               <center>
                 <i>
                   <p style="font-size: 40px; color: #ffffff; font-family: 'Times New Roman', Times, serif;">Get in touch.</p>
@@ -152,11 +152,20 @@
                 </h1>
               </center>
               <br>
+              <div class="col-sm-3">
               <p>Your name</p>
-              <input style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;" required></input>&nbsp; <p>Your email</p>
-              <input type="email" style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;" required></input>&nbsp; <p>Your Phone</p>
-              <input style="float: left; font-size: 14px; font-family: 'Lato', sans-serif; width: 24%; height: 35px;" placeholder="Code" required></input>
-              <input style="float: right; font-size: 14px; font-family: 'Lato', sans-serif; width: 75%; height: 35px;" placeholder="Phone" required></input>
+              <input style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;" required></input></div>&nbsp;
+              <div class="col-sm-3">
+              <p>Your email</p>
+              <input type="email" style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;" required></input></div>&nbsp;
+
+              <p>Your Phone</p>
+              <div class="col-sm-3">
+            <input type="numeric" class="form-control rounded-0" style="float: left; font-size: 14px; font-family: 'Lato', sans-serif; width: 24%; height: 35px;" placeholder="Code" aria-label="City" required>
+        </div>
+        <div class="col-sm-9">
+            <input type="numeric" class="form-control rounded-0" style="float: right; font-size: 14px; font-family: 'Lato', sans-serif; width: 75%; height: 35px;" placeholder="Phone" aria-label="State" required="">
+        </div>
               <br>
               <br>
               <br>
@@ -186,5 +195,13 @@
     </div>
   </div>
 </footer>
+
+<script>
+        function myFunction() {
+          alert("Form Submitted.");
+        }
+        </script>
+
 <script type="text/javascript" src="assets/js/mobile.js"></script>
+
 </html>
