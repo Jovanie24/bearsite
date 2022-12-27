@@ -29,7 +29,7 @@
           <a href="#">ABOUT</a>
         </li>
         <li>
-          <a href="#">CONTACT</a>
+          <a href="#contact">CONTACT</a>
         </li>
         <li>
           <a href="#">SERVICES</a>
@@ -144,7 +144,7 @@
         <div class="contact">
           <div class="form" style="color: white; background: #000000; padding: 20px;">
             <br>
-            <form style="padding-left: 30px; padding-right: 30px; padding-bottom: 30px" id="form" onsubmit="myFunction()">
+            <form name="myForm" style="padding-left: 30px; padding-right: 30px; padding-bottom: 30px" id="form" onsubmit="return validate()" method="post">
               <center>
                 <i>
                   <p style="font-size: 40px; color: #ffffff; font-family: 'Times New Roman', Times, serif;">Get in touch.</p>
@@ -154,22 +154,27 @@
               <br>
               <div class="col-sm-3">
               <p>Your name</p>
-              <input style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;" required></input></div>&nbsp;
+              <input type="text" name="name" style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;"></input></div>&nbsp;
               <div class="col-sm-3">
               <p>Your email</p>
-              <input type="email" style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;" required></input></div>&nbsp;
+              <input type="email" name="email" style="font-family: 'Lato', sans-serif; width: 100%; height: 35px;"></input></div>&nbsp;
 
               <p>Your Phone</p>
               <div class="col-sm-3">
-            <input type="numeric" class="form-control rounded-0" style="float: left; font-size: 14px; font-family: 'Lato', sans-serif; width: 24%; height: 35px;" placeholder="Code" aria-label="City" required>
+            <input type="number" name="code" class="form-control rounded-0" style="float: left; font-size: 14px; font-family: 'Lato', sans-serif; width: 24%; height: 35px;" placeholder="Code" aria-label="City">
         </div>
         <div class="col-sm-9">
-            <input type="numeric" class="form-control rounded-0" style="float: right; font-size: 14px; font-family: 'Lato', sans-serif; width: 75%; height: 35px;" placeholder="Phone" aria-label="State" required="">
+            <input type="tel" name="phone" class="form-control rounded-0" style="float: right; font-size: 14px; font-family: 'Lato', sans-serif; width: 75%; height: 35px;" placeholder="Phone" aria-label="State">
         </div>
               <br>
               <br>
               <br>
-              <button class="button">SUBMIT</button>
+              <button class="button" type="submit">SUBMIT</button>
+              <br><br>
+              <center>
+                <p style="color:red" id="error"></p>
+                <p id="success"></p>
+              </center>
             </form>
           </div>
         </div>
@@ -196,11 +201,18 @@
   </div>
 </footer>
 
-<script>
-        function myFunction() {
-          alert("Thanks for contacting us! We will get in touch with you shortly.");
-        }
-        </script>
+<!--script type="text/javascript">
+  function validate() {
+  document.getElementById('texto').innerHTML = "Thanks for contacting us! We will get in touch with you shortly.";
+  setTimeout(function(){
+   window.location.reload();
+}, 100000);
+
+}
+
+
+
+</script-->
 
 <script type="text/javascript" src="assets/js/mobile.js"></script>
 
